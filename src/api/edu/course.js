@@ -66,5 +66,12 @@ export default{
             method: 'get',
         })
     },
+    //课程列表数据查询
+    removeCourseById(courseId){
+        return request({
+            url: "/eduservice/edu-course/deleteCourseById/"+courseId,
+            method: 'delete',
+        })
+    }
 
 }
